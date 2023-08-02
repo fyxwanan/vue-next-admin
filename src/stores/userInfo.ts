@@ -37,7 +37,7 @@ export const useUserInfo = defineStore('userInfo', {
 					let defaultRoles: Array<string> = [];
 					let defaultAuthBtnList: Array<string> = [];
 					// admin 页面权限标识，对应路由 meta.roles，用于控制路由的显示/隐藏
-					let adminRoles: Array<string> = ['admin'];
+					let adminRoles: Array<string> = ['admin', 'xiaoreya'];
 					// admin 按钮权限标识
 					let adminAuthBtnList: Array<string> = ['btn.add', 'btn.del', 'btn.edit', 'btn.link'];
 					// test 页面权限标识，对应路由 meta.roles，用于控制路由的显示/隐藏
@@ -45,7 +45,7 @@ export const useUserInfo = defineStore('userInfo', {
 					// test 按钮权限标识
 					let testAuthBtnList: Array<string> = ['btn.add', 'btn.link'];
 					// 不同用户模拟不同的用户权限
-					if (userName === 'admin') {
+					if (['admin', 'xiaoreya'].includes(userName)) {
 						defaultRoles = adminRoles;
 						defaultAuthBtnList = adminAuthBtnList;
 					} else {
@@ -56,7 +56,7 @@ export const useUserInfo = defineStore('userInfo', {
 					const userInfos = {
 						userName: userName,
 						photo:
-							userName === 'admin'
+              ['admin', 'xiaoreya'].includes(userName)
 								? 'https://img2.baidu.com/it/u=1978192862,2048448374&fm=253&fmt=auto&app=138&f=JPEG?w=504&h=500'
 								: 'https://img2.baidu.com/it/u=2370931438,70387529&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
 						time: new Date().getTime(),

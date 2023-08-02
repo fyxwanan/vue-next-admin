@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2023-08-02 16:20:10
+ * @LastEditors: xiaoreya@163.com
+ * @LastEditTime: 2023-08-02 20:03:42
+ * @Description: 
+-->
 <template>
 	<el-config-provider :size="getGlobalComponentSize" :locale="getGlobalI18n">
 		<router-view v-show="setLockScreen" />
@@ -5,7 +11,6 @@
 		<Setings ref="setingsRef" v-show="setLockScreen" />
 		<CloseFull v-if="!themeConfig.isLockScreen" />
 		<Upgrade v-if="getVersion" />
-		<Sponsors />
 	</el-config-provider>
 </template>
 
@@ -26,7 +31,6 @@ const LockScreen = defineAsyncComponent(() => import('/@/layout/lockScreen/index
 const Setings = defineAsyncComponent(() => import('/@/layout/navBars/topBar/setings.vue'));
 const CloseFull = defineAsyncComponent(() => import('/@/layout/navBars/topBar/closeFull.vue'));
 const Upgrade = defineAsyncComponent(() => import('/@/layout/upgrade/index.vue'));
-const Sponsors = defineAsyncComponent(() => import('/@/layout/sponsors/index.vue'));
 
 // 定义变量内容
 const { messages, locale } = useI18n();

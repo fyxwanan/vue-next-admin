@@ -1,8 +1,14 @@
+<!--
+ * @Date: 2023-08-02 16:20:10
+ * @LastEditors: xiaoreya@163.com
+ * @LastEditTime: 2023-08-02 19:53:00
+ * @Description: 
+-->
 <template>
 	<div class="layout-footer pb15">
 		<div class="layout-footer-warp">
-			<div>vue-next-admin，Made by lyt with ❤️</div>
-			<div class="mt5">深圳市 xxx 公司版权所有</div>
+			<div>xiaoreya-admin，Made by lyt with ❤️</div>
+			<div class="mt5">不属于任何公司版权所有</div>
 		</div>
 	</div>
 </template>

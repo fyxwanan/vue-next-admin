@@ -97,7 +97,8 @@ const openDialog = (type: string, row: RowDicType) => {
 			];
 		} else {
 			row.list = [
-				{ id: Math.random(), label: 'role', value: 'admin' },
+        { id: Math.random(), label: 'role', value: 'admin' },
+        { id: Math.random(), label: 'role', value: 'xiaoreya' },
 				{ id: Math.random(), label: 'role', value: 'common' },
 				{ id: Math.random(), label: 'roleName', value: '超级管理员' },
 				{ id: Math.random(), label: 'roleName', value: '普通用户' },

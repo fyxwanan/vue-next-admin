@@ -12,7 +12,7 @@
 						</div>
 						<div class="personal-user-right">
 							<el-row>
-								<el-col :span="24" class="personal-title mb18">{{ currentTime }}，admin，生活变的再糟糕，也不妨碍我变得更好！ </el-col>
+								<el-col :span="24" class="personal-title mb18">{{ currentTime }}，xiaoreya，生活变的再糟糕，也不妨碍我变得更好！ </el-col>
 								<el-col :span="24">
 									<el-row>
 										<el-col :xs="24" :sm="8" class="personal-item mb6">
@@ -33,7 +33,7 @@
 										</el-col>
 										<el-col :xs="24" :sm="16" class="personal-item mb6">
 											<div class="personal-item-label">登录时间：</div>
-											<div class="personal-item-value">2021-02-05 18:47:26</div>
+											<div class="personal-item-value">{{ loginTime }}</div>
 										</el-col>
 									</el-row>
 								</el-col>
@@ -187,6 +187,9 @@
 import { reactive, computed } from 'vue';
 import { formatAxis } from '/@/utils/formatTime';
 import { newsInfoList, recommendList } from './mock';
+import moment from 'moment';
+
+const loginTime = moment(new Date()).format('yyyy-mm-DD hh:mm:ss');
 
 // 定义变量内容
 const state = reactive<PersonalState>({
@@ -200,6 +203,7 @@ const state = reactive<PersonalState>({
 		phone: '',
 		sex: '',
 	},
+  loginTime,
 });
 
 // 当前时间提示语

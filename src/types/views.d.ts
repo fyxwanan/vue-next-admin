@@ -24,6 +24,7 @@ declare type PersonalState = {
 		phone: string;
 		sex: string;
 	};
+  loginTime: string,
 };
 
 /**
