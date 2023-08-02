@@ -13,7 +13,7 @@ RUN npm install
 # 将整个项目复制到工作目录
 COPY . .
 
-# 执行 UmiJS 的项目构建
+# 执行 vue-next-admin 的项目构建
 RUN npm run build
 
 # 使用 Nginx 镜像作为基础镜像
@@ -23,7 +23,7 @@ FROM nginx:latest
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # 使用 80 端口暴露 Nginx 服务
-EXPOSE 8888
+EXPOSE 80
 
 # 启动 Nginx 服务
 CMD ["nginx", "-g", "daemon off;"]
