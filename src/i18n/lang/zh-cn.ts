@@ -29,6 +29,7 @@ export default {
 		funCropper: '图片裁剪',
 		funQrcode: '二维码生成',
 		funEchartsMap: '地理坐标/地图',
+		funCodemirror: '代码编辑器',
 		funPrintJs: '页面打印',
 		funClipboard: '复制剪切',
 		funGridLayout: '拖拽布局',

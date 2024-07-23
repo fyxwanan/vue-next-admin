@@ -29,6 +29,7 @@ export default {
 		funCropper: '圖片裁剪',
 		funQrcode: '二維碼生成',
 		funEchartsMap: '地理座標/地圖',
+		funCodemirror: '代碼編輯器',
 		funPrintJs: '頁面列印',
 		funClipboard: '複製剪切',
 		funGridLayout: '拖拽佈局',

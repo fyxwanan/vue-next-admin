@@ -29,6 +29,7 @@ export default {
 		funCropper: 'cropper',
 		funQrcode: 'qrcode',
 		funEchartsMap: 'EchartsMap',
+		funCodemirror: 'CodeMirror',
 		funPrintJs: 'PrintJs',
 		funClipboard: 'Copy cut',
 		funGridLayout: 'Drag layout',

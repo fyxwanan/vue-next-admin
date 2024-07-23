@@ -474,6 +474,22 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 						},
 					},
 					{
+						path: '/fun/codemirror',
+						name: 'funCodemirror',
+						component: () => import('/@/views/fun/codemirror/index.vue'),
+						meta: {
+							title: 'message.router.funCodemirror',
+							isLink: '',
+							isHide: false,
+							isKeepAlive: true,
+							isAffix: false,
+							isIframe: false,
+							roles: ['admin', 'xiaoreya', 'common'],
+							// icon: 'iconfont icon-fa-file-code-o',
+							icon: 'iconfont icon-ico',
+						},
+					},
+					{
 						path: '/fun/echartsMap',
 						name: 'funEchartsMap',
 						component: () => import('/@/views/fun/echartsMap/index.vue'),

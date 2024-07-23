@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import moment from 'moment';
 
 /**
  * 布局配置
@@ -138,7 +137,7 @@ export const useThemeConfig = defineStore('themeConfig', {
 			 * 全局网站标题 / 副标题
 			 */
 			// 网站主标题（菜单导航、浏览器当前网页标题）
-			globalTitle: 'xiaoreya-admin',
+			globalTitle: 'xiaoreya的管理系统',
 			// 网站副标题（登录页顶部文字）
 			globalViceTitle: 'Hello~',
 			// 网站副标题（登录页顶部文字）

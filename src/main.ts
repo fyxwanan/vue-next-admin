@@ -10,9 +10,27 @@ import ElementPlus from 'element-plus';
 import '/@/theme/index.scss';
 import VueGridLayout from 'vue-grid-layout';
 
+// import { basicSetup } from 'codemirror'
+// import VueCodemirror from 'vue-codemirror'
+
 const app = createApp(App);
 
 directive(app);
 other.elSvg(app);
 
-app.use(pinia).use(router).use(ElementPlus).use(i18n).use(VueGridLayout).mount('#app');
+// app.use(VueCodemirror, {
+//     // optional default global options
+//     autofocus: true,
+//     disabled: false,
+//     indentWithTab: true,
+//     tabSize: 2,
+//     placeholder: 'Code goes here...',
+//     extensions: [basicSetup]
+// })
+
+app.use(pinia)
+    .use(router)
+    .use(ElementPlus)
+    .use(i18n)
+    .use(VueGridLayout)
+    .mount('#app');
