@@ -4,6 +4,7 @@
 	"description": "vue3 vite next admin template",
 	"author": "lyt_20201208",
 	"license": "MIT",
+	"homepage": "https://xiaoreya/vue-next-admin",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
