@@ -56,7 +56,7 @@ import { yaml } from "@codemirror/lang-yaml";
 // import { oneDark } from "@codemirror/theme-one-dark";
 import { ref, reactive, watch } from "vue";
 // import { EditorView } from "@codemirror/view";
-import { languageOptions, themeOptions } from "./mock";
+import { languageOptions, themeOptions, ElOptionProps } from "./mock";
 
 
 interface IProps {
@@ -74,7 +74,18 @@ const editorRef = ref(null);
 
 let languageExtension = javascript();
 
-const state = reactive({
+interface IState {
+    codeMirrorFilter: {
+        elColClassName: string,
+        languageValue: string,
+        theme: string,
+    },
+    languageOptions?: ElOptionProps[],
+    themeOptions?: ElOptionProps[],
+    extensions?: any,
+}
+
+const state: IState = reactive({
     codeMirrorFilter: {
         elColClassName: "",
         languageValue: "javascript",

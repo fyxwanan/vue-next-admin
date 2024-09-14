@@ -75,6 +75,8 @@ export default {
 		layoutLinkView: 'LinkView',
 		layoutIframeViewOne: 'IframeViewOne',
 		layoutIframeViewTwo: 'IframeViewTwo',
+		juejin: 'Juejin',
+		juejinHome: 'Juejin',
 	},
 	staticRoutes: {
 		signIn: 'signIn',

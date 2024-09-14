@@ -1,0 +1,207 @@
+// 主色调
+$primary-color: #3290ec;
+
+// primary-color
+$colorButtonBgPrimary: $primary-color;
+// 没有用到
+// $mx-event-tile-body-a-color: #3290ec;
+$input-focused-border-color: $primary-color;
+// 语音消息已读进度的背景颜色-别人发的
+$message-body-panel-fg-color: #3290ec;
+// 语音消息已读进度的背景颜色-自己发的
+$message-body-panel-fg-color-self: #45AF54;
+
+// 没用到
+$linkwallet-operation-next: #3290ec;
+
+// 没用到
+$linkwallet-wallet-connect: #3290ec;
+
+// 没用到
+$home-page-button-color: $primary-color;
+
+// 发送消息按钮背景颜色
+$sender-message-button-color: $primary-color;
+
+// 没用到
+$send-message-button-color: $primary-color;
+
+// 消息-回复的引用框-前面小竖条的背景颜色-别人发的
+$mx-reply-main-color: $primary-color;
+
+// 主要按钮的背景颜色，默认主题色，一般不调整
+$button-primary-bg-color: $primary-color;
+
+// 好多地方用到这个变量，取值为主题色，不做调整
+$accent-color: $primary-color;
+
+// button UI (white-on-green in light skin)
+$accent-color-50pct: rgba($primary-color, 0.5);
+$accent-color-alt: $primary-color;
+
+// used for the border of input text fields
+$input-valid-border-color: $primary-color;
+$button-bg-color: $primary-color;
+$presence-online: $primary-color;
+
+// Tabbed views
+$tab-label-active-bg-color: $primary-color;
+
+// Buttons
+$button-primary-bg-color: $primary-color;
+$button-link-fg-color: $primary-color;
+
+// Toggle switch
+$togglesw-on-color: $primary-color;
+
+// Slider
+$slider-selection-color: $primary-color;
+$progressbar-fg-color: $primary-color;
+$reaction-row-button-selected-border-color: $primary-color;
+
+// 消息-用表情回复-表情那一栏的背景颜色-自己发的
+$reaction-row-button-self-bg-color: #45AF54;
+// 消息-用表情回复-表情那一栏的背景颜色-别人发的
+$reaction-row-button-bg-color: #3290ec;
+
+// 链接颜色-自己发的
+$message-self-link-color: #3290ec;
+// 链接颜色-链接host颜色-自己发的-用不到了-被删了
+$message-self-link-host-color: #3290ec;
+$message-link-host-color: $primary-color;
+
+// These two don't change between themes. They are the $warning-color, but we don't
+// want custom themes to affect them by accident.
+
+// 消息-语音播放按钮背景颜色-别人发的
+$voice-playback-button-bg-color: #3290ec;
+// 消息-语音播放按钮背景颜色-自己发的
+$voice-playback-button-bg-color-self: #45AF54;
+// 消息-未播放状态下-语音进度条背景颜色-别人发的
+$voice-record-waveform-incomplete-fg-color: rgba(#3290ec, 0.3);
+// 消息-未播放状态下-语音进度条背景颜色-自己发的
+$voice-record-waveform-incomplete-fg-color-self: rgba(#45AF54, 0.3);
+// 消息-语音时间颜色-别人发的
+$voice-clock-color: #3290ec;
+// 消息-语音时间颜色-自己发的
+$voice-clock-color-self: #45AF54;
+
+// Bubble tiles
+// 消息-消息卡片背景颜色-自己发的
+$eventbubble-self-bg: #DCF8C5;
+// 消息-消息卡片背景颜色-别人发的
+$eventbubble-others-bg: #ffffff;
+
+// message reply
+// 消息-回复引用框-背景颜色-别人发的
+$mx-reply-bg-color: #F0F6FC;
+// 消息-回复引用框-背景颜色-自己发的
+$mx-reply-self-bg-color: #CBEFB7;
+// 消息-回复的引用框-前面小竖条的背景颜色-别人发的
+$mx-reply-border-bg-color: #65AADD;
+// 消息-回复的引用框-前面小竖条的背景颜色-自己发的
+$mx-reply-border-self-bg-color: #45AF54;
+
+// message sender
+// 消息-名字颜色-别人发的
+$mx-message-sender-color: #65AADD;
+// 消息-名字颜色-自己发的
+$mx-message-sender-self-color: #45AF54;
+
+// event timestamp
+// 消息-发送时间-别人发的
+$event-timestamp-color: rgba(#000000, 0.4);
+// 消息-发送时间-自己发的
+$event-timestamp-self-color: #45AF54;
+
+// room notice message
+// 聊天界面-系统提示文字-背景颜色
+$mx-message-notice-bg-color: #6AA163;
+// 聊天界面-系统提示文字-文字颜色
+$mx-textual-event-color: #FFFFFF;
+
+
+// poll message
+// 没用到
+// $mx-poll-option-bg-color: #ffffff;
+// 消息-投票-投票项背景颜色-自己发的
+$mx-poll-option-progress-bg-color: #E6FAD5;
+// 消息-投票-投票项背景颜色-别人发的
+$mx-poll-option-progress-receiver-bg-color: #F7F7F7;
+// 消息-投票-已投票-进度条背景颜色-自己发的
+$mx-poll-option-selected-color: #45AF54;
+// 消息-投票-已投票-进度条背景颜色-别人发的
+$mx-poll-option-selected-receiver-color: #65AADD;
+
+// 消息-投票前-投票项背景颜色（没用到了，自己没投票前，看不到进度条了）
+// $mx-poll-option-default-color: #dac2fb;
+
+// 创建投票时候，输入框的背景颜色
+// $mx-poll-create-input-bg-color: $colorBgSecondary;
+
+// 消息-投票-（单选框 | 多选框）已做出选择后，未选中的边框颜色
+$mx-poll-create-switcher-disabled-bg-color: rgba(#3290ec, 0.4);
+// 新投票-是否多选区域-背景颜色
+// $mx-poll-create-switcher-bg-color: $whiteColor;
+
+// 消息-投票- (单选框 | 多选框) 还没投票的时候，前面radio 或者 checkobx 的背景颜色 边框颜色- 自己发的
+// 消息-投票- (单选框 | 多选框) 已做出选择后，前面radio 或者 checkobx 的背景颜色 边框颜色- 自己发的
+$pollSwitcherBgColor: #3290ec;
+
+// 消息-投票- (单选框 | 多选框) 还没投票的时候，前面radio 或者 checkobx 的背景颜色 边框颜色- 自己发的
+// 消息-投票- (单选框 | 多选框) 已做出选择后，前面radio 或者 checkobx 的背景颜色 边框颜色- 别人发的
+$pollSwitcherReceiverBgColor: #3290ec;
+
+// 消息-投票-（多选框）-内面icon的颜色-自己发的
+$pollSelectedIconColor: #ffffff;
+// 消息-投票-（多选框）-内面icon的颜色-别人发的
+$pollSelectedReceiverIconColor: #ffffff;
+
+// 被删了
+// $pollSelectedBgColor: #3290ec;
+
+// 被删了
+// $pollSelectedReceiverBgColor: #3290ec;
+
+// 消息-投票- (单选框 | 多选框) 已做出选择后，前面radio 或者 checkobx 的背景颜色 边框颜色- 别人发的
+$pollSelectedReceiverCheckedBgColor: #3290ec;
+
+// 消息-投票-投票项背景颜色-自己发的
+$pollOptionsBg: #E6FAD5;
+// $poll-options-bg-group-layout: #ffffff;
+
+// 消息-投票-投票项背景颜色-自己发的
+$pollOptionsReceiverBg: #F7F7F7;
+
+// 消息-投票-投票项边框颜色-自己发的
+$pollOptionsReceiverBorderColor: rgba(#000000, 0.03);
+
+// 消息-投票-投票栏下面的文字描述颜色-自己发的(eg: Based on 1 vote)
+$pollTotalVotesTextColor: #45AF54;
+
+// 消息-投票-投票栏下面的文字描述颜色-别人发的(eg: Based on 1 vote)
+$pollTotalVotesReceiverTextColor: #979797;
+
+// 消息-投票-投票栏下面按钮文字颜色-自己发的(VOTE)
+$pollVoteTextColor: $colorTextBase;
+
+// 消息-投票-投票栏下面按钮文字颜色-别人发的(VOTE)
+$pollVoteReceiverTextColor: $primary-color;
+
+
+@define-mixin mx_DialogButton_danger {
+    background-color: $primary-color;
+}
+
+@define-mixin mx_DialogButton_secondary {
+    // flip colours for the secondary ones
+    font-weight: 600;
+    border: 1px solid $primary-color !important;
+    color: $primary-color;
+    background-color: $button-secondary-bg-color;
+}
+
+@define-mixin mx_Dialog_link {
+    color: $primary-color;
+    text-decoration: none;
+}

@@ -1,5 +1,5 @@
 # 使用 Node.js 镜像作为基础镜像
-FROM node:16 AS builder
+FROM node:20 AS builder
 
 # 设置工作目录
 WORKDIR /app
@@ -8,7 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安装项目依赖
-RUN npm install
+RUN npm install -g pnpm
+
+# 安装项目依赖
+RUN pnpm install
 
 # 将整个项目复制到工作目录
 COPY . .

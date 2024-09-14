@@ -75,6 +75,8 @@ export default {
 		layoutLinkView: '外链',
 		layoutIframeViewOne: '内嵌 iframe1',
 		layoutIframeViewTwo: '内嵌 iframe2',
+		juejin: '掘金',
+		juejinHome: '掘金',
 	},
 	staticRoutes: {
 		signIn: '登录',
